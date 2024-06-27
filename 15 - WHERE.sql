@@ -1,0 +1,14 @@
+USE ContosoRetailDW
+
+SELECT TOP 1000  WITH TIES -- 
+	EmailAddress
+	,Gender
+	,MaritalStatus
+	,TotalChildren
+	,NumberChildrenAtHome
+	,NumberCarsOwned AS 'QUANTIDADE_CARROS'
+	,Education
+FROM DimCustomer
+WHERE Education = 'High School'  -- WHERE CONSEGUIMOS COLOCAR ALGUNS FILTROS USANDO OPERADORES COMO = > < 
+ 
+ORDER BY 2 DESC, 3 DESC, 4 DESC, [QUANTIDADE_CARROS] DESC -- ORDER BY É O ULTIMO ARGUMENTO DA NOSSA QUERY
