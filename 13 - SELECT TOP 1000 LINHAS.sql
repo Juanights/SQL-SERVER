@@ -1,0 +1,13 @@
+USE ContosoRetailDW
+
+SELECT TOP 1000  -- USANDO O TOP + O NUMERO DE LINHAS RETORNA SOMENTE A QUANTIDADE DE LINHAS QUE ESCREVEMOS
+	EmailAddress
+	,Gender
+	,MaritalStatus
+	,TotalChildren
+	,NumberChildrenAtHome
+	,NumberCarsOwned AS 'QUANTIDADE_CARROS'
+	,Education
+FROM DimCustomer
+ 
+ORDER BY 2 DESC, 3 DESC, 4 DESC, [QUANTIDADE_CARROS] DESC
