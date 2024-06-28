@@ -11,6 +11,6 @@ SELECT
 FROM DimCustomer
 WHERE 
 	Education IN ('BachelorS','GRADUATED DEGREE') 
-	AND NumberChildrenAtHome >= 1  -- 
+	AND NumberChildrenAtHome >= 2  -- 
 	AND NOT (MaritalStatus = 'M' OR MaritalStatus IS NULL) -- PROCURAMOS VALORES NULOS, OU SEJA QUANDO A COLUNA NÃO FOI PREENCHIDA
 	AND TotalChildren IN(3, 4)
