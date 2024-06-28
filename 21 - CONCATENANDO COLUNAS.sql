@@ -1,0 +1,7 @@
+USE ContosoRetailDW
+
+SELECT 
+	FirstName + ' ' + LastName AS 'FULLNAME', -- USAMOS O SINAL DE MAIS (+) PARA CONCATENAR AS COLUNAS QUE DESEJAMOS
+	* 
+
+FROM DimEmployee
