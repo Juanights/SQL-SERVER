@@ -10,5 +10,8 @@ SELECT
 	,COUNT(S.SalesAmount) AS CONTAGEM
 
 FROM FactSales AS S
+WHERE 
+	S.channelKey IN (1,2) AND
+	S.PromotionKey BETWEEN 1 AND 5
 GROUP BY S.channelKey, S.PromotionKey
 ORDER BY S.channelKey, S.PromotionKey
