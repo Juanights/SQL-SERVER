@@ -10,5 +10,5 @@ SELECT
 	,COUNT(S.SalesAmount) AS CONTAGEM
 
 FROM FactSales AS S
-GROUP BY S.channelKey, S.PromotionKey
+GROUP BY S.channelKey, S.PromotionKey -- GROUP BY CONSEGUIMOS AGRUPAR NOSSAS COLUNAS 
 ORDER BY S.channelKey, S.PromotionKey
