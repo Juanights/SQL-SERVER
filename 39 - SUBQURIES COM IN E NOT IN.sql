@@ -1,0 +1,8 @@
+USE ContosoRetailDW
+
+SELECT 
+	ProductKey
+	,UnitPrice
+FROM DimProduct
+WHERE UnitPrice <= (SELECT AVG(UNITPRICE) FROM DimProduct)
+ORDER BY  UnitPrice DESC
