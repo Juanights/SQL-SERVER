@@ -18,3 +18,7 @@ SELECT
 SELECT 
 	*
 FROM FactOnlineSales
+WHERE
+	YEAR(DateKey) = 2007 AND
+	MONTH(DATEKEY) = 12 AND
+	DAY(DateKey) = 31
