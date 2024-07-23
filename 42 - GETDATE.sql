@@ -14,3 +14,7 @@ SELECT
 
 SELECT
 	DAY(GETDATE()) AS DIA
+
+SELECT 
+	*
+FROM FactOnlineSales
