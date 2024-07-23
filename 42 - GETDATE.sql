@@ -1,0 +1,4 @@
+USE ContosoRetailDW
+
+SELECT 
+GETDATE() AS 'DATA ATUAL' -- ESSA 
