@@ -23,4 +23,4 @@ WHERE
 	DATEPART(YEAR, S.DateKey) = 2008 AND
 	DATEPART(DAY, S.DateKey) = 25
 
-	ORDER BY S.DateKey 
+	ORDER BY S.ProductKey DESC
