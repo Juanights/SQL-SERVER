@@ -1,7 +1,7 @@
 USE ContosoRetailDW
 
 
--- SET DATEFORMAT
+-- SET DATEFORMAT - MUDAR O FORMATO DA DATA 
 -- MDY: Mês, Dia, Ano
 -- DMY: Dia, Mês, Ano
 -- YMD: Ano, Mês, Dia
