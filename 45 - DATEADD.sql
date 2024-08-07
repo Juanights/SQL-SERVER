@@ -4,5 +4,5 @@ USE ContosoRetailDW
 SET DATEFORMAT DMY
 SELECT 
 	GETDATE() AS HOJE,
-	DATEADD(DAY, 9, GETDATE()) AS DIA,
+	DATEADD(DAY, 9, GETDATE()) AS DIA, -- Colocamos a quantidade de dias ou mês ou outro numero na função
 	DATEADD(MONTH, 1, GETDATE()) AS MES
