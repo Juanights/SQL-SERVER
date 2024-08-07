@@ -1,5 +1,5 @@
 -- CONSEGUMIOS ADICIONAR INTERVALOS A UMA DATA
-
+-- DATEADD (inetrvalo, quantidade, data) (no caso usamos o Getdate que busca a da data e hora atual)
 USE ContosoRetailDW
 SET DATEFORMAT DMY
 SELECT 
